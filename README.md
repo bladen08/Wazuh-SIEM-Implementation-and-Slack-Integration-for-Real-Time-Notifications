@@ -1,5 +1,6 @@
 # Creation-and-configuration-of-a-Wazuh-SIEM
-<h2>Description</h2>
+<h2>Description</h2> In this project I Implement and configure Wazuh SIEM (Security Information and Event Management) as a comprehensive security solution for monitoring and analyzing network events and security incidents. Integrate Wazuh with Slack to enable immediate notifications for real-time alerts and incident updates.
+<h2>Walkthrough</h2>
 The first step is creating a Linode account, which you can do at https://cloud.linode.com/ once I created a linode account, I launched Wazuh as a virtual machine in Linode. I did this by clicking “create>Linode>marketplace” and searched and clicked on Wazuh in the search bar. Then from there, I entered my email, new credentials, name for the VM, etc. Next I selected the image, which I chose Ubuntu 22.04, and I chose the Linode 4GB plan because any plan cheaper than that would not work.
 <img src="https://imgur.com/dcwghSV.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br/>Because by default SSH is open to everybody, I created a firewall in Linode and added firewall rules to allow all TCP and UDP traffic from my IP address so that my virtual machine is only accessible to me
