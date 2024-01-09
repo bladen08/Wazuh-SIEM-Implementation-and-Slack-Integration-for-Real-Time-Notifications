@@ -1,9 +1,8 @@
 # Creation-and-configuration-of-a-Wazuh-SIEM
 The first step is creating a Linode account, which you can do at https://cloud.linode.com/ once I created a linode account, I launched Wazuh as a virtual machine in Linode. I did this by clicking “create>Linode>marketplace” and searched and clicked on Wazuh in the search bar. Then from there, I entered my email, new credentials, name for the VM, etc. Next I selected the image, which I chose Ubuntu 22.04, and I chose the Linode 4GB plan because any plan cheaper than that would not work.
-<img src="https://imgur.com/WJHcq6a.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/7BKzmUw.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br/>Because by default SSH is open to everybody, I created a firewall in Linode and added firewall rules to allow all TCP and UDP traffic from my IP address so that my virtual machine is only accessible to me
-
-
+<img src="https://imgur.com/IVWZJH5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 Launched Wazuh as a Virtual machine using Linode. Then proceeded to install Wazuh by copying and pasting the SSH access code into the windows command prompt. I watched Wazuh install by entering “htop” as a command. I then put “ls -al” to list all files and then entered “cat .deployment-secrets.txt” to find my admin username and password to connect to Wazuh. 
 Afterward, I found the reverse DNS address under Network>IP addresses section in Linode. Copied and pasted the reverse DNS address into my browser and connected using the admin username and password.
